@@ -1,0 +1,7 @@
+enterprise-search:
+  url: http://localhost:3002/api/ws/v1
+  username: elastic
+  password: changeme
+
+server:
+  port: 8081

@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "enterprise-search.url",
+      "type": "java.lang.String",
+      "description": "Enterprise search base url. Example: http://localhost:3002."
+    },
+    {
+      "name": "enterprise-search.username",
+      "type": "java.lang.String",
+      "description": "Enterprise search username. Used for Basic Authentication."
+    },
+    {
+      "name": "enterprise-search.password",
+      "type": "java.lang.String",
+      "description": "Enterprise search password. Used for Basic Authentication."
+    }
+  ]
+}
