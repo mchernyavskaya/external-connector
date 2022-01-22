@@ -1,0 +1,18 @@
+POST {{rootUrl}}/source
+Content-Type: application/json
+
+{
+  "name": "Test Content Source"
+}
+
+###
+POST {{rootUrl}}/source/{{contentSourceId}}/index
+Content-Type: application/json
+Accept: application/json
+
+{
+    "url": "https://www.example.com/3",
+    "title": "Example 3",
+    "body": "Example 3 Body",
+    "id": "3"
+}

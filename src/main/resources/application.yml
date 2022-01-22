@@ -5,3 +5,10 @@ enterprise-search:
 
 server:
   port: 8081
+
+logging:
+  level:
+    org:
+      elasticsearch:
+        externalconnector:
+          client: DEBUG

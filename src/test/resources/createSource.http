@@ -1,6 +1,0 @@
-POST {{rootUrl}}/source
-Content-Type: application/json
-
-{
-  "name": "Test Content Source"
-}
