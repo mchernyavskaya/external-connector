@@ -1,4 +1,4 @@
-package org.elasticsearch.externalconnector.model;
+package org.elasticsearch.externalconnector.contentsource;
 
 import lombok.Data;
 

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 
 public class ObjectMappers {
-    public static ObjectMapper DEFAULT = new ObjectMapper()
+    public static ObjectMapper DEFAULT = new ObjectMapper() {}
         .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
     public static ObjectMapper SNAKE_CASE = new ObjectMapper()

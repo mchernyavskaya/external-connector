@@ -1,7 +1,7 @@
-package org.elasticsearch.externalconnector.controller;
+package org.elasticsearch.externalconnector.contentsource;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.elasticsearch.externalconnector.client.EnterpriseSearchClient;
-import org.elasticsearch.externalconnector.model.ContentSource;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,12 +14,12 @@ public class ContentSourceController {
     }
 
     @GetMapping("/{id}")
-    public ContentSource getSource(@PathVariable String id) {
+    public ContentSource getSource(@PathVariable String id) throws JsonProcessingException {
         return client.getCustomSource(id);
     }
 
     @PostMapping()
-    public ContentSource createSource(@RequestBody ContentSource source) {
+    public ContentSource createSource(@RequestBody ContentSource source) throws JsonProcessingException {
         return client.createSource(source);
     }
 }

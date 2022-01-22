@@ -15,7 +15,7 @@ import javax.annotation.PostConstruct;
 @Getter
 @Setter
 @Slf4j
-public class EnterpriseSearchConfiguration {
+public class EnterpriseSearchProperties {
     private String url;
     private String username;
     private String password = "";

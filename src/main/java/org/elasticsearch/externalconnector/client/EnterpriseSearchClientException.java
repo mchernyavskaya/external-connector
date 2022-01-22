@@ -11,10 +11,6 @@ import org.springframework.util.StringUtils;
 public class EnterpriseSearchClientException extends RuntimeException {
     private ErrorResponse errorResponse;
 
-    public EnterpriseSearchClientException() {
-        super();
-    }
-
     public EnterpriseSearchClientException(String message, ErrorResponse errorResponse) {
         super(message);
         this.errorResponse = errorResponse;
